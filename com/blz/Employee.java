@@ -4,6 +4,7 @@ import java.util.Random;
 
 class Employee {
 
+	private final int MONTHLY_DAYS = 20;
 	private final int WAGE_PER_HRS = 20;
 	private final int FULL_DAY_HRS = 8;
 	private final int PART_TIME_HRS = 4;
@@ -29,10 +30,15 @@ class Employee {
 		case "Employee is present full time":
 		int fullDailyWage = WAGE_PER_HRS * FULL_DAY_HRS;
 		System.out.println("The daily wage of a full time Employee is : " +fullDailyWage+ " $");
+		int fullMonthlyWage = fullDailyWage * MONTHLY_DAYS;
+		System.out.println("The Monthly wage of a full time Employee is : " +fullMonthlyWage+ " $");
+		break;
 		
 		case "Employee is present part time":
 		int halfDailyWage = WAGE_PER_HRS * PART_TIME_HRS;
 		System.out.println("The daily wage of a part time employee is : "+halfDailyWage+ " $");
+		int halfMonthlyWage = halfDailyWage * MONTHLY_DAYS;
+		System.out.println("The monthly wage of a part time employee is : "+halfMonthlyWage+ " $");
 		
 		}
 	}
