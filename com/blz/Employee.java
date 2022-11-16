@@ -33,6 +33,7 @@ class Employee {
 		case "Employee is present part time":
 		int halfDailyWage = WAGE_PER_HRS * PART_TIME_HRS;
 		System.out.println("The daily wage of a part time employee is : "+halfDailyWage+ " $");
+		
 		}
 	}
 }
