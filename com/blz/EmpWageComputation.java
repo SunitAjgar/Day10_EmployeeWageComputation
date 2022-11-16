@@ -7,5 +7,6 @@ public class EmpWageComputation {
 		Employee emp = new Employee();
 		String str = emp.employeeAttendance();
 		System.out.println(str);
+		emp.checkEmpWage(str);
 	}
 }
