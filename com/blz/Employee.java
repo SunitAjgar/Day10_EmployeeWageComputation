@@ -3,7 +3,8 @@ package com.blz;
 import java.util.Random;
 
 class Employee {
-
+    
+	private final int TOTAL_WORKING_HRS = 100;
 	private final int MONTHLY_DAYS = 20;
 	private final int WAGE_PER_HRS = 20;
 	private final int FULL_DAY_HRS = 8;
@@ -32,6 +33,9 @@ class Employee {
 		System.out.println("The daily wage of a full time Employee is : " +fullDailyWage+ " $");
 		int fullMonthlyWage = fullDailyWage * MONTHLY_DAYS;
 		System.out.println("The Monthly wage of a full time Employee is : " +fullMonthlyWage+ " $");
+		if(TOTAL_WORKING_HRS >= 100 || MONTHLY_DAYS == 20) {
+			System.out.println("The Monthly wage after checking the condition of 20 days of a full time Employee is : " +fullMonthlyWage+ " $");
+		}
 		break;
 		
 		case "Employee is present part time":
@@ -39,6 +43,9 @@ class Employee {
 		System.out.println("The daily wage of a part time employee is : "+halfDailyWage+ " $");
 		int halfMonthlyWage = halfDailyWage * MONTHLY_DAYS;
 		System.out.println("The monthly wage of a part time employee is : "+halfMonthlyWage+ " $");
+		if(TOTAL_WORKING_HRS >= 100 || MONTHLY_DAYS == 20) {
+			System.out.println("The Monthly wage after checking the condition of 20 days of a part time Employee is : " +halfMonthlyWage+ " $");
+		}
 		
 		}
 	}
