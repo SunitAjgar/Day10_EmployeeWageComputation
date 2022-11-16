@@ -4,8 +4,9 @@ import java.util.Random;
 
 class Employee {
 
-	private final int WagePerHrs = 20;
-	private final int FullDayHrs = 8;
+	private final int WAGE_PER_HRS = 20;
+	private final int FULL_DAY_HRS = 8;
+	private final int PART_TIME_HRS = 4;
 
 	public String employeeAttendance() {
 		
@@ -26,8 +27,12 @@ class Employee {
 		switch (str) {
 		
 		case "Employee is present full time":
-		int FullDailyWage = WagePerHrs * FullDayHrs;
-		System.out.println("The daily wage of a full time Employee is : " + FullDailyWage + " $");
+		int fullDailyWage = WAGE_PER_HRS * FULL_DAY_HRS;
+		System.out.println("The daily wage of a full time Employee is : " +fullDailyWage+ " $");
+		
+		case "Employee is present part time":
+		int halfDailyWage = WAGE_PER_HRS * PART_TIME_HRS;
+		System.out.println("The daily wage of a part time employee is : "+halfDailyWage+ " $");
 		}
 	}
 }
