@@ -8,5 +8,8 @@ public class EmpWageComputation {
 		String str = emp.employeeAttendance();
 		System.out.println(str);
 		emp.checkEmpWage(str);
+		Company ref1 = new Company("Netflix", 25, 30, 8);
+		Company ref2 = new Company("Amazon", 30, 30, 8);
+		Company ref3 = new Company("Atlassian", 35, 30, 8);
 	}
 }
