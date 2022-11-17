@@ -1,5 +1,7 @@
 package com.blz;
 
+import java.util.Arrays;
+
 public class EmpWageComputation {
 
 	public static void main(String[] args) {
@@ -14,5 +16,10 @@ public class EmpWageComputation {
 		System.out.println(ref2);
 		Company ref3 = new Company("Atlassian", 35, 30, 8);
 		System.out.println(ref3);
+		Company[] EmpWagearr = new Company[3];
+		EmpWagearr[0] = ref1;
+		EmpWagearr[1] = ref2;
+		EmpWagearr[2] = ref3;
+		System.out.println(Arrays.toString(EmpWagearr));
 	}
 }
